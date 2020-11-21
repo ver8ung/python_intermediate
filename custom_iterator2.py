@@ -1,4 +1,4 @@
-#iterator incorporation a loop
+#iterator incorporation a loop raising StopIteration when the condition is met
 class Zähler:
     def __iter__(self):
         self.a = 1
