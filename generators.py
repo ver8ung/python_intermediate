@@ -45,3 +45,14 @@ while True:
         print("Recieved on the next(): ", next(newGenerator2))
     except StopIteration:
         break
+
+# generator with for loop and StopIteration function includes
+def squareSeq2(y):
+    for i in range(y):
+        yield i*i
+
+newGenerator3 = squareSeq2(8)
+
+for sqr in newGenerator3:
+    print(sqr)
+
