@@ -66,3 +66,12 @@ while True:
         print(next(square1))
     except StopIteration:
         break
+
+#generator expressions in a function
+import math
+
+def genex(x):
+    print(sum(i * i for i in range(x)))
+
+genex1 = genex(3)
+print(genex1)
