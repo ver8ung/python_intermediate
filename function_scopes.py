@@ -25,3 +25,15 @@ def global1():
 
 global1()
 print(y)
+
+# naming and renaming variables (z inside function can be used differently)
+z= 150
+
+def rename():
+    z = 24
+    print (z)
+
+rename()
+print(z)
+
+# global keyword makes variables global
