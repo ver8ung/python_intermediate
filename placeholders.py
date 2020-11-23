@@ -34,3 +34,9 @@ age = 30
 name = "Thomas"
 newmsg3 = "The name is {1}. {1} is {0} years old."
 print(newmsg3.format(age, name))
+
+# using named indexes
+neworder = "I have a {car}, it is a {model}."
+
+print(neworder.format(car = "Volvo", model= "S60"))
+print(neworder.format(car = "Nissan", model= "370Z"))
