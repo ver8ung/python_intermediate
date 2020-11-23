@@ -29,3 +29,8 @@ itemNumber = 77
 price = 23.55
 secondorder = "We want {0} pieces of item number {1} for {2:.2f} Euros."
 print(secondorder.format(quantity, itemNumber, price))
+
+age = 30
+name = "Thomas"
+newmsg3 = "The name is {1}. {1} is {0} years old."
+print(newmsg3.format(age, name))
