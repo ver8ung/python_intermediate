@@ -56,3 +56,13 @@ newGenerator3 = squareSeq2(8)
 for sqr in newGenerator3:
     print(sqr)
 
+
+#generator expressions
+
+square1 = (i*i for i in range(7))
+
+while True:
+    try:
+        print(next(square1))
+    except StopIteration:
+        break
