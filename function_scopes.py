@@ -37,3 +37,11 @@ rename()
 print(z)
 
 # global keyword makes variables global
+
+def mglobal():
+    global f
+    f = 55
+    print(f)
+
+mglobal()
+print(f)
