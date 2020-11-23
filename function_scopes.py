@@ -15,4 +15,13 @@ def newfunc():
         print(x)
     newfunc2()
 newfunc()
-#newfunc2 is only called inside the sope of newfunc and cannot be called outside of it
+#newfunc2 is only called inside the scope of newfunc and cannot be called outside of it
+
+# global variables (can be accesed "everywhere")
+y = 123
+
+def global1():
+    print(y)
+
+global1()
+print(y)
