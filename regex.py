@@ -35,8 +35,25 @@ print(x) # None means no match
 
 #split strings at each white space
 
-text5 = "Hello and good day Sir!"
+text5 = "Hello and good day Sir !"
 x = re.split("\s", text5)
 print (x)
 
-#controlling the number of occurences
+list = iter(x)
+
+for i in list:
+    print(i)
+
+#controlling the number of occurences with maxsplit (default -1) or separator
+
+text6 = "The weather today is cloudy."
+x = re.split("\s", text6, 1)
+
+print (x)
+
+#replacing with the sub function, controlling number of replacements with count
+
+text7 = "Hello what is your name?"
+x= re.sub("\s", "$", text7, 1)   # 1 = 1 dollar sign (count)
+
+print (x)
