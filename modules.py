@@ -66,3 +66,13 @@ dq.appendright(40)
 q.pop()
 q.popleft
 q.popright
+
+#random module pseudo-random number generator function
+import random as rd
+
+rd.random()
+rd.randint(1,50)
+rd.randrange (1, 10)
+rd.randrange (1, 10, 2)
+rd.choice ("Python)
+rd.choice ([1, 2, 3, 4, 5])
