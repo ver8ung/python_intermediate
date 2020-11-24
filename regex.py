@@ -10,3 +10,11 @@ if x:
     print("Yes, we have a match!")
 else:
     print("No match!")
+
+#regex function and metacharacters special sequences and sets
+# findall matches
+
+text2 = "Python is very very easy to understand."
+x = re.findall("very", text2)
+
+print(x)
