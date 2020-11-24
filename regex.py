@@ -75,8 +75,16 @@ print(x.span())
 
 #string property
 
-text10 = "I am starting to run out of ideas."
+text10 = "This is a test string."
 
-x = re.search(r"\bI\w+", text10)
+x = re.search(r"\bT\w+", text10)
 
 print(x.string)
+
+# print word containing uppercase using the group method
+
+text11 = "i am certainly not an Expert in grammar."
+
+x = re.search(r"\bE\w+", text11)
+
+print (x.group())
