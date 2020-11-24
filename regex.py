@@ -26,3 +26,17 @@ x = re.search("\s", text3)
 
 print(x)
 print ("First white-space position:", x.start())
+
+#search without match
+
+text4 = "Today is Tuesday!"
+x = re.search("rain", text4)
+print(x) # None means no match
+
+#split strings at each white space
+
+text5 = "Hello and good day Sir!"
+x = re.split("\s", text5)
+print (x)
+
+#controlling the number of occurences
