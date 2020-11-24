@@ -57,3 +57,26 @@ text7 = "Hello what is your name?"
 x= re.sub("\s", "$", text7, 1)   # 1 = 1 dollar sign (count)
 
 print (x)
+
+#match object
+
+text8 = "This is a test notification!"
+x = re.search("test", text8)
+
+print(x) # shows match on position 10 - 14
+
+# using span to search for upper case
+
+text9 = "this is intentionally Spelled wrong."
+
+x = re.search(r"\bS\w+", text9) # r means treated as string, \bS -> uppercase S
+
+print(x.span())
+
+#string property
+
+text10 = "I am starting to run out of ideas."
+
+x = re.search(r"\bI\w+", text10)
+
+print(x.string)
