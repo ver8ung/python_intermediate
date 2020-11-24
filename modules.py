@@ -9,3 +9,9 @@ print(x)
 
 os.rmdir("F:\\tempdir")
 os.listdir ("F:\\tempdir")
+
+# sys module
+import sys
+sys.maxsize
+sys.path
+sys.version
