@@ -18,3 +18,11 @@ text2 = "Python is very very easy to understand."
 x = re.findall("very", text2)
 
 print(x)
+
+# search for the first white space
+
+text3 = "Hello this is a test message!"
+x = re.search("\s", text3)
+
+print(x)
+print ("First white-space position:", x.start())
